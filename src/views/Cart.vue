@@ -45,7 +45,7 @@ import { Trash2, Minus, Plus, ShoppingBag } from 'lucide-vue-next'; // Better Ic
           <div class="col-6 col-md-4 d-flex align-items-center justify-content-end pe-4 mt-2 mt-md-0">
             <div class="text-end me-4">
               <div class="fw-bold text-primary">${{ (item.price * item.qty).toLocaleString() }}</div>
-              <div class="small text-muted">${{ item.price.toLocaleString() }} ea</div>
+              <div class="small text-muted">${{ item.price.toLocaleString() }}</div>
             </div>
 
             <button @click="cartStore.removeFromCart(item._id || item.id)"
